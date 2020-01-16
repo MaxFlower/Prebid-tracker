@@ -1,0 +1,15 @@
+# General
+build
+dist
+node_modules
+.nyc_output
+coverage
+
+# Editors
+.vscode
+.idea
+*.iml
+
+# Cypress
+cypress/videos
+cypress/screenshots

@@ -1,0 +1,31 @@
+{
+  "name": "tracker",
+  "version": "0.1.0",
+  "description": "Javascript code that tracks Prebid.js events.",
+  "private": true,
+  "scripts": {
+    "cypress": "cypress open --config-file false",
+    "test": "cypress run --config-file false",
+    "test-summary": "npm run cypress && npx nyc report --reporter=text-summary",
+    "build": "webpack --mode=development",
+    "start": "npm run build && webpack-dev-server --open"
+  },
+  "keywords": [
+    "javascript",
+    "tracker",
+    "prebid"
+  ],
+  "author": "Maksim Tsvetkov",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress/code-coverage": "^1.10.4",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "cypress": "^3.8.2",
+    "istanbul-lib-coverage": "^3.0.0",
+    "nyc": "^15.0.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  }
+}
