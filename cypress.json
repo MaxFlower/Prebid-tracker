@@ -1,0 +1,9 @@
+{
+  "baseUrl": "http://localhost:8080",
+  "supportFile": "cypress/support/index.ts",
+  "video": false,
+  "screenshotOnRunFailure": false,
+  "viewportWidth": 1280,
+  "viewportHeight": 720,
+  "chromeWebSecurity": false
+}
